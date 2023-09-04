@@ -1,0 +1,107 @@
+html {
+  height: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .errormessage{
+    color: red;    
+    display: none;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .idquestiontext{
+    font-size: 40px
+  }
+
+  .buttonoption {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    font-size: small;
+  }
+
+  .button {
+    transition-duration: 0.4s;
+  }
+  
+  .buttonoption:hover {
+    background-color: #e7e7e7;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  progress {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .hiddencontrol{
+    visibility: hidden;
+  }
+
+  .showcontrol{
+    visibility: visible;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;   
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);    
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+  }

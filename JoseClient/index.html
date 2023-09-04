@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tests Page</title>
+  </head>
+  <body onload="populateControlsMain()">
+    <div class="container">
+      <section id="seccion1" class="centered">
+        <h2>Test Task</h2>
+        <input type="text" id="usernametxt" placeholder="UserName" required />
+        <span id="errormessage" class="errormessage"
+          >Username is required!</span
+        >
+
+        <label for="opcion">Choose a test:</label>
+        <select id="opcionMain"></select>
+
+        <button id="boton">Start</button>
+      </section>
+
+      <section id="seccion2" class="centered hiddencontrol">
+        <div>
+          <label id="idquestiontext" class="idquestiontext"></label>
+        </div>
+        <div id="controlsareaid" class="grid-container"></div>
+        <div>
+          <progress id="progressid" value="0" max="100"></progress>
+        </div>
+        <button id="buttonnextid" onclick="nextQuestion()">Next</button>
+      </section>
+
+      <section id="seccion3" class="centered hiddencontrol">
+        <h1 id="titleheaderid">Thank you</h1>
+        <h3 id="scoreheaderid"></h3>
+      </section>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
